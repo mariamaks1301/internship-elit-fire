@@ -1,0 +1,53 @@
+.header{
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        column-gap: 39px;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        column-gap: 61px;
+    }
+    &__logo{
+        color: #FFF;
+        font-family: 'Scania Sans CY ';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 70px; /* 350% */
+        letter-spacing: 2.1px;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+    &__subtitle{
+        color: #6D6D6D;
+        font-family: 'Lab Grotesque';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+        letter-spacing: 0.6px;
+    }
+
+}
+
+    
+
+
+  
+
+
+
+
+
+    
+
+
+
+    
+

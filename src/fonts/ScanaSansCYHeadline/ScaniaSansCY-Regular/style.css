@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Scania Sans CY ';
+    src: local('Scania Sans CY  Regular'), local('Scania-Sans-CY--Regular'),
+        url('ScaniaSansCY-Regular.woff2') format('woff2'),
+        url('ScaniaSansCY-Regular.woff') format('woff'),
+        url('ScaniaSansCY-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -1,0 +1,102 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    transition: .5s all linear;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Lab Grotesque';
+}
+    body{
+        background: black;
+    }
+
+    .container{
+        max-width: 1309px;
+        width: 100%;
+        padding: 0 20;
+        margin: 0 auto;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+    }
+
+    $gold: #FFCF7A;
+    $white: #fff;
+    $grey: #757575;
+    $black: #121212;
+    $light-grey: #949494;
+
+    $bg-title: linear-gradient(181deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+
+
+    .title{
+        font-family: 'Lab Grotesque, sans-serif';
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 250;
+        line-height: 80px; /* 125% */
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        background: linear-gradient(183deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    
+
+    @mixin text( $fs, $fw, $fz, $lh, $col) {
+        font-style: $fs;
+        font-weight: $fw;
+        font-size: $fz;
+        line-height: $lh;
+        color: $col;
+    }
+
+    .ibg{
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+        
+    .ibg img{
+        
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+        
+        
+        
+
+
+    @import "header";
+    @import "menu";
+    @import "begin";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
