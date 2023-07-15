@@ -1,0 +1,55 @@
+.special{
+
+    
+    .container{
+        background: url('../images/special-bg.png') center/cover no-repeat;
+        padding-bottom: 200px;
+
+    }
+    &__title{
+        text-align: center;
+        text-align: center;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 250;
+        line-height: 60px; /* 150% */
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+
+        background: linear-gradient(183deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__subtitle{
+        text-align: center;
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 33px; /* 165% */
+        letter-spacing: 0.6px;
+    }
+    &__img{
+        max-width: 1289px;
+        width: 100%;
+        max-height: 495px;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 140px;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        column-gap: 29px;
+        &-text{
+            @include text(normal, 300, 16, 1.5, $white);
+        }
+    }
+
+}

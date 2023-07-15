@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +10,10 @@
     font-family: 'Lab Grotesque';
 }
     body{
-        background: black;
+        // background: black;
+        // background: url('../images/layout-bg.png') center/cover no-repeat;
+        background: url(<path-to-image>), rgb(28 29 28) 0% 0% / 100px 100px repeat;
+
     }
 
     .container{
@@ -85,6 +87,13 @@
     @import "header";
     @import "menu";
     @import "begin";
+    @import "special";
+    @import "refueling";
+    @import "smart";
+
+
+
+
 
 
 
