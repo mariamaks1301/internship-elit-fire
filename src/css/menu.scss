@@ -26,11 +26,17 @@
         width: 50px;
         height: 50px; 
         border-radius: 2px;  
-        background: linear-gradient(270.21deg, rgba(249, 139, 77, 0.8) 18.08%, rgba(255, 103, 82, 0.8) 68.72%);
+        background: linear-gradient(270.21deg, rgba(219, 142, 97, 0.8) 18.08%, rgba(234, 112, 96, 0.8) 68.72%);
 
         display: flex;
         justify-content: center;
         align-items: center;
+            &:hover{
+                background: linear-gradient(270.21deg, rgba(249, 139, 77, 0.8) 18.08%, rgba(255, 103, 82, 0.8) 68.72%);
+            }
+            span path{
+                fill: $white;
+            }
 
     }
     

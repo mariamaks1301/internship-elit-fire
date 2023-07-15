@@ -1,5 +1,5 @@
 .info{
-    
+    padding-bottom: 65px;
     &__top{
        display: flex;
        column-gap: 84px;
@@ -17,7 +17,6 @@
             width: calc(50% - 42px);
             max-width: 537px;
             width: 100%;
-
         }
      }
     &__row{
@@ -63,6 +62,11 @@
         }
         &-bot{
             margin-bottom: 24px;
+        }
+        &-more{
+            @include text(normal, 300, 30px, 1.5, $white);
+            text-align: center;
+            margin: 106px 0 20px 0;
         }
     }
     &__text{

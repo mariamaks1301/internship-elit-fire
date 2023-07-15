@@ -1,0 +1,22 @@
+.solution{
+    padding: 65px 0 45px 0;
+    &__title{
+        margin-bottom: 45px;
+        text-align: center;
+        font-size: 40px;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        column-gap: 42px;
+        margin-bottom: 90px;
+
+    }
+    &__card{
+        width: calc(33.33333% - 28px);
+        width: 100%;
+        height: 267px;
+        border-radius: 2px;
+        background: $black;
+    }
+}

@@ -1,0 +1,50 @@
+.autor{
+    padding: 45px 0 89px 0;
+    &__title{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 53px;
+    }
+    &__top{
+        display: flex;
+        column-gap: 86px;
+        margin-bottom: 68px;
+    }
+    &__left{
+        width: calc(40% - 43px);
+    }
+    &__right{
+        width: calc(60% - 43px);
+
+    }
+
+    &__bottom{
+        display: flex;
+        align-items: center;
+    }
+    &__column{
+        width: 25%;
+        &-text{
+            @include text(normal, 500, 12px, 4.58, rgba(255, 255, 255, 0.50));
+            text-transform: uppercase;
+            letter-spacing: 1.62px;
+        }
+        &-length{
+            @include text(normal, 400, 24px, 2.1, $white);
+        }
+        &-circle{
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: none;
+            background: #B8542A;
+
+        }
+        &-price{
+            @include text(normal, 300, 36px, 1.1, #FFCF7A);
+            letter-spacing: 1.8px;
+
+        }
+
+    }
+}

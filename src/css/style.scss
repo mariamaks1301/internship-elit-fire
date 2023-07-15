@@ -18,7 +18,7 @@
     .container{
         max-width: 1309px;
         width: 100%;
-        padding: 0 20;
+        padding: 0 20px;
         margin: 0 auto;
     }
 
@@ -68,6 +68,12 @@
 
     }
 
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+   
+
     
 
     @mixin text( $fs, $fw, $fz, $lh, $col) {
@@ -76,6 +82,26 @@
         font-size: $fz;
         line-height: $lh;
         color: $col;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 284px;
+        height: 60px;
+        border-radius: 1px;
+        background: linear-gradient(270.21deg, rgba(219, 142, 97, 0.8) 18.08%, rgba(234, 112, 96, 0.8) 68.72%);
+        cursor: pointer;
+        border: none;
+
+        @include text(normal, 500, 18px, 1.66, $black);
+
+        &:hover{
+            background: linear-gradient(270.21deg, rgba(249, 139, 77, 0.8) 18.08%, rgba(255, 103, 82, 0.8) 68.72%);
+            color: $white;
+        }
+        
     }
 
     
@@ -94,6 +120,10 @@
     @import "smart";
     @import "info";
     @import "swiper";
+    @import "solution";
+    @import "autor";
+
+
 
 
 
