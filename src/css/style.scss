@@ -10,9 +10,8 @@
     font-family: 'Lab Grotesque';
 }
     body{
-        // background: black;
-        // background: url('../images/layout-bg.png') center/cover no-repeat;
-        background: url(<path-to-image>), rgb(28 29 28) 0% 0% / 100px 100px repeat;
+        background:  url('../images/layout-bg.png') 0 0/cover no-repeat, url(<path-to-image>), rgb(28 29 28) 0% 0% / 100px 100px repeat;
+
 
     }
 
@@ -26,6 +25,23 @@
     .row{
         display: flex;
         align-items: center;
+    }
+    
+     .ibg{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+        
+    .ibg img{
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
     }
 
     $gold: #FFCF7A;
@@ -62,23 +78,7 @@
         color: $col;
     }
 
-    .ibg{
-        background-position: right;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-        
-    .ibg img{
-        
-        width: 0;
-        height: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        visibility: hidden;
-    }
+   
         
         
         

@@ -1,12 +1,23 @@
 .begin{
     padding: 98px 0 240px;
     position: relative;
-    &::before{
-        content: url('../images/fireplace.png');
+    display: flex;
+    // &::before{
+    //     content: url('../images/fireplace.png');
+    //     position: absolute;
+    //     top: 10%;
+    //     right: 10%;
+    // }
+    &__img{   
         position: absolute;
+        max-width: 700px;
+        width: 100%;
+        max-height: 429px;
+        height: 100%;
+        right: 12%;
         top: 10%;
-        right: 10%;
     }
+   
     &__title{
         margin-bottom: 29px;
     }
