@@ -4,9 +4,22 @@
        display: flex;
        column-gap: 84px;
     }
-    &__bottom{
+     &__bottom{
+        margin-top: 113px;
+        display: flex;
+        column-gap: 84px;
+        &-left{
+            width: calc(50% - 42px);
+            max-width: 537px;
+            width: 100%;
+        }
+        &-right{
+            width: calc(50% - 42px);
+            max-width: 537px;
+            width: 100%;
 
-    }
+        }
+     }
     &__row{
         display: flex;
 
@@ -29,12 +42,14 @@
             margin-bottom: 50px;
             
         }
-        &-3{
+        // &-3{
             
-        }
+        // }
     }
     &__right{
         width: calc(50% - 42px);
+        max-width: 537px;
+        width: 100%;
         &-1{
             margin-bottom: 50px;
         }
@@ -44,11 +59,17 @@
         margin-bottom: 25px;
         &-grey{
             @include text(normal, 400, 18px, 1.5, #757575);
-            margin-bottom: 22px;
+            margin-bottom: 15px;
+        }
+        &-bot{
+            margin-bottom: 24px;
         }
     }
     &__text{
         @include text(normal, 400, 14px, 1.92, $white);
+        &-bot{
+            margin-bottom: 37px;
+        }
     }
     &__img{
         max-width: 571px;

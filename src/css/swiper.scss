@@ -1,0 +1,29 @@
+.swiper {
+    max-width: 537px;
+    width: 100%;
+    height: 346px;
+
+  }
+
+ .swiper-rtl {
+    position: relative;
+ }
+
+.swiper-button-next{
+    &:after{
+        content: url('../icons/swiper-next.png');
+        position: absolute;
+        bottom: -116px;
+        right: 420px;
+
+    }
+    
+}
+.swiper-button-prev{
+    &::after{
+        content: url('../icons/swiper-prev.png');
+        position: absolute;
+        bottom: -116px;
+        left: 40px;
+    }
+}
