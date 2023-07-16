@@ -449,6 +449,100 @@
                         <img class="autor__left-img" src="./src/images/autor-img.png" alt="fireplace elit-fire">
                     </div>
                     <div class="autor__top-right">
+                        <form class="autor__form">
+                            <div class="autor__length">
+                                <span class="autor__column-text autor__right-text">Выберите длину</span>
+
+                                <div class="autor__length-row">
+                                    <p class="autor__length-text">0.5 м</p>
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                    </div>
+                                    <p class="autor__length-text">10 м</p>
+
+                                </div>
+                                
+                            </div>
+                            <div class="autor__panel carousel">
+                                <span class="autor__column-text autor__right-text">Лицевая панель</span>
+                                <div class="swiper swiper-panel">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                      <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <img class="swiper-slide-img" src="./src/images/autor-panel.png" alt="fireplace-panel">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./src/images/autor-panel.png" alt="fireplace-panel">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./src/images/autor-panel.png" alt="fireplace-panel">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./src/images/autor-panel.png" alt="fireplace-panel">
+                                        </div>
+                                    </div>
+    
+                                      <!-- If we need pagination -->
+                                     <div class="swiper-pagination"></div>
+    
+                                    
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                  
+                                  </div>
+    
+    
+                            </div>
+                            <div class="autor__details">
+                                <span class="autor__column-text autor__right-text">дополнительные функции</span>
+                                <div class="autor__details-row">
+                                    <div class="autor__details-left">
+                                        
+                                            <label for="" class="autor__label">
+                                                <span class="autor__checkbox-name">Защита от детей</span>
+                                                <input class="autor__checkbox" type="checkbox" name="vehicle1" value="Bike">
+                                            </label>
+                                            <label for="" class="autor__label">
+                                                <span class="autor__checkbox-name">Wi-Fi</span>
+                                                <input class="autor__checkbox" type="checkbox" name="vehicle1" value="Bike">
+                                            </label>
+                                            <label for="" class="autor__label">
+                                                <span class="autor__checkbox-name">Защита от детей</span>
+                                                <input class="autor__checkbox" type="checkbox" name="vehicle1" value="Bike">
+                                            </label>
+                                            <label for="" class="autor__label">
+                                                <span class="autor__checkbox-name">Wi-Fi</span>
+                                                <input class="autor__checkbox" type="checkbox" name="vehicle1" value="Bike">
+                                            </label>
+                                    </div>
+                                    <div class="autor__details-right">
+                                        <label for="" class="autor__label">
+                                            <span class="autor__checkbox-name">Защита от детей</span>
+                                            <input class="autor__checkbox" type="checkbox" name="vehicle1" value="Bike">
+                                        </label>
+                                        <label for="" class="autor__label">
+                                            <span class="autor__checkbox-name">Wi-Fi</span>
+                                            <input class="autor__checkbox" type="checkbox" name="vehicle1" value="Bike">
+                                        </label>
+                                        <label for="" class="autor__label">
+                                            <span class="autor__checkbox-name">Защита от детей</span>
+                                            <input class="autor__checkbox" type="checkbox" name="vehicle1" value="Bike">
+                                        </label>
+                                        <label for="" class="autor__label">
+                                            <span class="autor__checkbox-name">Wi-Fi</span>
+                                            <input class="autor__checkbox" type="checkbox" name="vehicle1" value="Bike">
+                                        </label>
+        
+                                    </div>
+                                </div>
+                                
+    
+    
+                            </div>
+                        </form>
+                        
 
                     </div>
 
@@ -479,49 +573,53 @@
             <h2 class="footer__title title">связаться с нами</h2>
             <div class="footer__row">
                 <div class="footer__column footer__column-1">
-                    <div>
+                    <div class="footer__column-top">
                         <span class="footer__text">WhatsApp</span>
-                        <p class="footer__desc"></p>
+                        <p>
+                            <a href="#" class="footer__desc">+7911 306 4144</a>
+                        </p>
                     </div>
-                    <div>
+                    <div class="footer__column-bot">
                         <span class="footer__text">Телеграмм</span>
-                        <p class="footer__desc"></p>
+                        <p><a href="#" class="footer__desc">@elite_fire</a></p>
                     </div>
                 </div>
                 <div class="footer__column footer__column-2">
-                    <div>
+                    <div class="footer__column-top">
                         <span class="footer__text">Почта</span>
-                        <p class="footer__desc">info@elite-fire.ru</p>
+                        <p><a href="#" class="footer__desc gold">info@elite-fire.ru</a></p>
                     </div>
-                    <div>
+                    <address class="footer__column-bot">
                         <span class="footer__text">Наш адрес</span>
                         <p class="footer__desc">
                             Россия, г. Москва, <br> 
                             Варшавское шоссе, 170 г
                         </p>
-                    </div>
+                    </address>
                 </div>
                 <div class="footer__column footer__column-3">
                     <span class="footer__text">Телефон</span>
-                    <p class="footer__desc">8 911 306 4144</p>
+                    <p><a href="tel:+8 911 306 4144" class="footer__desc">8 911 306 4144</a></p>
 
                     <button class="footer__btn">Связаться с менеджером</button>
                 </div>
 
             </div>
-            <div class="copyright">
-                <div class="copyright__left">
-                    <h4 class="footer__logo">Elite Fire</h4>
-                    <p>Elite Fire</p>
-                    <p>ООО “МЕТАЛЛЭЛЕКТРОИНВЕСТ”</p>
-                </div>
+        </div>
+        <div class="copyright">
+                <div class="container">
+                    
+                    <div class="copyright__left">
+                        <h4 class="copyright__logo">Elite Fire</h4>
+                        <p class="copyright__text">Elite Fire</p>
+                        <p class="copyright__text">ООО “МЕТАЛЛЭЛЕКТРОИНВЕСТ”</p>
+                    </div>
 
-                <div class="copyright__right">
-                    <a class="copyright__link" href="">Пользовательское соглашение</a>
-                </div>
+                    <div class="copyright__right">
+                        <a class="copyright__link" href="#">Пользовательское соглашение</a>
+                    </div>
 
             </div>
-
         </div>
     </footer>
     

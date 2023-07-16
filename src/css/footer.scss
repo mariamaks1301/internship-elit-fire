@@ -1,0 +1,89 @@
+.footer {
+    background: #121212;
+    padding-top: 50px;
+    &__title {
+        font-size: 40px;
+        margin-bottom: 71px;
+    }
+    &__row {
+        display: flex;
+        // align-items: center;
+        margin-bottom: 66px;
+
+    }
+    &__column {
+
+        &-1 {
+            width: 35%;
+            &:first-child{
+                margin-bottom: 50px;
+            }
+        }
+        &-2 {
+            width: 40%;
+        }
+        &-3 {
+            width: 35%;
+        }
+        &-top{
+            margin-bottom: 50px;
+        }
+    }
+    
+    &__text {
+        @include text(normal, 300, 14px, 2.57, #949494);
+    }
+    &__desc {
+        @include text(normal, 300, 22px, 1.63, $white);
+    }
+    
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 279px;
+        height: 60px;
+        background: $black;
+        border-radius: 2px;
+        border: 1px solid #CEB787;
+        cursor: pointer;
+
+        @include text(normal, 500, 18px, 1.66, $white);
+        margin-top: 61px;
+    }
+}
+address{
+    margin-top: 50px;
+}
+
+
+.copyright {
+    border-top: 1px solid #ffffff40;
+    padding: 41px 0 44px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__left {
+        display: flex;
+        column-gap: 41px;
+    }
+    &__logo {
+        @include text(normal, 400, 14px, 1.1, $white);
+        font-family: 'Scania Sans CY ';
+        letter-spacing: 1.47px;
+        margin-right: 110px;
+        cursor: pointer;
+
+    }
+    &__text {
+        @include text(normal, 400, 14px, 1.1, #6D6D6D);
+        letter-spacing: 0.7px;
+    }
+    &__link {
+        @include text(normal, 400, 14px, 1.1, #6D6D6D);
+        letter-spacing: 0.7px;
+    }
+}

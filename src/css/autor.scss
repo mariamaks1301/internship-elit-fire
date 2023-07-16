@@ -9,13 +9,61 @@
         display: flex;
         column-gap: 86px;
         margin-bottom: 68px;
+        &-right{
+            padding-left: 84px;
+            margin-top: -23px;
+        }
     }
     &__left{
         width: calc(40% - 43px);
     }
     &__right{
+        
         width: calc(60% - 43px);
+        &-text{
+            line-height: 1.2;
+            margin: 0;
+        }
 
+    }
+    &__length{
+        &-row{
+            display: flex;
+            align-items: center;
+            column-gap: 47px;
+        }
+        &-text{
+            white-space: nowrap;
+            @include text(normal, 500, 18px, 3, $white);
+
+        }
+    }
+    &__panel{
+        display: flex;
+        flex-direction: column;
+    }
+    &__details{
+        &-row{
+            display: flex;
+            column-gap: 140px;
+        }
+        &-left{
+            width: calc(50% - 70px);
+
+        }
+        &-right{
+            width: calc(50% - 70px);
+        }
+
+    }
+    &__label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+    &__checkbox{
+        background: $gold;
     }
 
     &__bottom{
@@ -48,3 +96,60 @@
 
     }
 }
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 360px;
+    height: 2px;                    
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 2px;
+    background: #FFCF7A;
+    cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+input[type=checkbox]{
+    accent-color: $gold;
+    position: relative;
+}
+
+input[type=checkbox]:checked{   ///Doesn's work************************************************
+    &::after{
+        content: url('../images/add.svg');
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%);
+    }
+}
+
+

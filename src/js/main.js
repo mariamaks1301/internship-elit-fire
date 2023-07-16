@@ -14,13 +14,14 @@ ibg();
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
+    spaceBetween: 30,
     direction: 'horizontal',
     loop: true,
   
     // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
+    pagination: {
+      el: '.swiper-pagination',
+    },
   
     // Navigation arrows
     navigation: {
@@ -33,6 +34,18 @@ const swiper = new Swiper('.swiper', {
     //   el: '.swiper-scrollbar',
     // },
   });
+
+
+
+  const slider = document.getElementById("myRange");
+    const output = document.getElementById("demo");
+    output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+
   
     
     

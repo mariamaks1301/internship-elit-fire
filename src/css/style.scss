@@ -72,6 +72,10 @@
         display: flex;
         justify-content: center;
     }
+
+    .gold{
+        color: $gold;
+    }
    
 
     
@@ -122,6 +126,8 @@
     @import "swiper";
     @import "solution";
     @import "autor";
+    @import "footer";
+
 
 
 
