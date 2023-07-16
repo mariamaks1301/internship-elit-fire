@@ -12,6 +12,8 @@ function ibg(){
 ibg();
 
 
+// slider images
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     spaceBetween: 30,
@@ -37,6 +39,7 @@ const swiper = new Swiper('.swiper', {
 
 
 
+  // slider ползунок
   const slider = document.getElementById("myRange");
     const output = document.getElementById("demo");
     output.innerHTML = slider.value; // Display the default slider value
@@ -45,6 +48,19 @@ const swiper = new Swiper('.swiper', {
     slider.oninput = function() {
         output.innerHTML = this.value;
     }
+
+// Burger menu
+
+const iconMenu = document.querySelector('.menu__icon');
+if(iconMenu){
+  const menuNav = document.querySelector('.menu__nav');
+
+  iconMenu.addEventListener('click', function(e){
+       document.body.classList.toggle('lock');
+       iconMenu.classList.add('active');
+       menuNav.classList.add('active');
+  })
+}
 
   
     
