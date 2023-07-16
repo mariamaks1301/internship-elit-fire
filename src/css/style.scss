@@ -120,12 +120,17 @@
       @media (max-width: 1024px){
         .title{
           font-size: 54px;
+          line-height: 1.2;
         }
       }
       @media (max-width: 992px){
         .container{
           max-width: 750px;
         }
+        .title{
+            font-size: 46px;
+            line-height: 1.5;
+          }
       }
       
       @media (max-width: 767px){

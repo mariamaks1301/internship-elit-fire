@@ -71,6 +71,7 @@
     }
     &__text{
         @include text(normal, 400, 14px, 1.92, $white);
+        white-space: nowrap;
         &-bot{
             margin-bottom: 37px;
         }
@@ -121,6 +122,17 @@
     }
 }
 @media (max-width: 1200px){
+    .info{
+        &__row-gap{
+            column-gap: 50px;
+        }
+        &__title-more{
+            margin: 40px 0 20px;
+        }
+        &__img::before{
+            width: 82%;
+        }
+    }
 
 }
 @media (max-width: 1024px){}
