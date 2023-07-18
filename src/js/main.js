@@ -39,15 +39,15 @@ const swiper = new Swiper('.swiper', {
 
 
 
-  // slider ползунок
-  const slider = document.getElementById("myRange");
-    const output = document.getElementById("demo");
-    output.innerHTML = slider.value; // Display the default slider value
+//   // slider ползунок
+//   const slider = document.getElementById("myRange");
+//     const output = document.getElementById("demo");
+//     output.innerHTML = slider.value; // Display the default slider value
 
-// Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
+// // Update the current slider value (each time you drag the slider handle)
+//     slider.oninput = function() {
+//         output.innerHTML = this.value;
+//     }
 
 // Burger menu
 
@@ -56,9 +56,9 @@ if(iconMenu){
   const menuNav = document.querySelector('.menu__nav');
 
   iconMenu.addEventListener('click', function(e){
-       document.body.classList.toggle('lock');
-       iconMenu.classList.add('active');
-       menuNav.classList.add('active');
+      //  document.body.classList.toggle('lock');
+       iconMenu.classList.toggle('active');
+       menuNav.classList.toggle('active');
   })
 }
 

@@ -1,4 +1,9 @@
 .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
     &__row{
         display: flex;
         justify-content: space-between;
@@ -40,6 +45,8 @@
 
 @media (max-width: 992px){
     .header{
+        position: relative;
+        z-index: 6;
         &__left{
             column-gap: 20px;
         }
