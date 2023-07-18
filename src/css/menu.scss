@@ -118,17 +118,7 @@
         padding: 100px 30px 30px 30px;
         transition: right 0.3s ease 0s;
         overflow: auto;
-        z-index: 4;
-        // &::before{
-        //     content: '';
-        //     position: fixed;
-        //     width: 100%;
-        //     top: 0;
-        //     left: 0;
-        //     height: 70px;
-        //     background: red;
-        //     z-index: 2;
-        // }
+        z-index: -1;
         &.active{
             right: 0;
         }

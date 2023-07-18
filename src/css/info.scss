@@ -289,6 +289,21 @@
     .info__img::before{
         width: 76.5%;
     }
+    .info__left-3-column{
+        column-gap: 20px;
+    }
+    .info__row-block{
+        width: calc(50% - 10px);
+    }
+    .info__left-1{
+        width:calc(60% - 15px);
+    }
+    .info__left-2{
+        width:calc(40% - 15px);
+    }
+    .info__img::before{
+        width: 73%;
+    }
 }
 
 
