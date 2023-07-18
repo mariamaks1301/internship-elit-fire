@@ -120,6 +120,8 @@
     }
     .special__row {
         column-gap: 22px;
+        flex-wrap: wrap;
+        row-gap: 15px;
     }
 }
 @media (max-width: 500px){
